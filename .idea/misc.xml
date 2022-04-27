@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/drawable/card_background.xml" value="0.1424342105263158" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/drawable/grd_back.xml" value="0.1424342105263158" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/drawable/month_bg.xml" value="0.1424342105263158" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/drawable/timeselect.xml" value="0.14104234527687295" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/attendence_rcv.xml" value="0.1" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/create_haazri_dialoge.xml" value="0.1" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/fragment_create_member.xml" value="0.15" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/fragment_front_.xml" value="0.12" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/fragment_profile.xml" value="0.18" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/fragment_upaad_.xml" value="0.1" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/grd_background.xml" value="0.1" />
+        <entry key="..\:/Android Studio Project/HaazRi V-01/HaazRiApp/app/src/main/res/layout/rcv_front.xml" value="0.25" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/drawable/back_arrow.xml" value="0.1424342105263158" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/drawable/green_bg.xml" value="0.14104234527687295" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/layout/activity_main.xml" value="0.13223684210526315" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/layout/add_haazri_dialoge.xml" value="0.2" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/layout/fragment_create_member.xml" value="0.13223684210526315" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/layout/fragment_front_.xml" value="0.13223684210526315" />
+        <entry key="..\:/Android Studio Project/HaazRi V-02/HaazRiApp/app/src/main/res/layout/fragment_home.xml" value="0.14" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/dx.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/grd_back.xml" value="0.2212962962962963" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/grd_up.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/green_bg.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/holiday_time.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/month_bg.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/month_shadow.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/rcv_background.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/red_bg.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/s.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/six_background.xml" value="0.22205128205128205" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/tick.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/timeselect.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/attendence_rcv.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/create_haazri_dialoge.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_home.xml" value="0.15" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_home2.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_upaad_.xml" value="0.209375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/grd_background.xml" value="0.11548913043478261" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/six_background.xml" value="0.11096014492753623" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HaazRiApp/app/src/main/res/menu/menu.xml" value="0.20615384615384616" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.127" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.127" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/accountsettinglogo.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/card_for_details.xml" value="0.236" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/darktolightbackgroundsetting.xml" value="0.194" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/grd_up.xml" value="0.1885" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/halftimebackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/headerbackground.xml" value="0.1885" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.236" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_app_blocking_24.xml" value="0.2645" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.2645" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_drive_file_rename_outline_24.xml" value="0.2645" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/languagevector.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/ligthtodarkbackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/lock01.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/loginbuttonbackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/overtimebackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/rcv_background.xml" value="0.236" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/selecttimebackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/setttingbtnbackground.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/timebackground.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/timeholidaybackground.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/timeselect.xml" value="0.2645" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/drawable/vectormemberlogo.xml" value="0.198" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/activity_registration.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/add_haazri_dialoge.xml" value="0.264" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/add_haazri_dialoge01.xml" value="0.16381578947368422" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/attendence_rcv.xml" value="0.264" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/create_haazri_dialoge.xml" value="0.16381578947368422" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/dialogedeletemember.xml" value="0.16381578947368422" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/dialogeforgotpassword.xml" value="0.16381578947368422" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_create_member.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_front_.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/fragment_register.xml" value="0.2" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/layout/rcv_front.xml" value="0.264" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/menu/menu.xml" value="0.16381578947368422" />
+        <entry key="..\:/Users/chand/AndroidStudioProjects/HaazRiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2445" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ligthtodarkbackground"
+    tools:context=".LoginActivity">
+    <View
+        android:id="@+id/logoview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/applogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="75dp"
+        />
+    <TextView
+        android:id="@+id/hellotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logoview"
+        android:layout_marginLeft="66dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/welcome"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="33dp"
+
+        />
+    <TextView
+        android:id="@+id/createtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hellotxt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="66dp"
+        android:text="@string/sign_in_to_continue"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/semibold"
+
+        />
+    <LinearLayout
+        android:id="@+id/linearusername"
+        android:layout_width="345dp"
+        app:layout_constraintTop_toBottomOf="@+id/createtxt"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/selecttimebackground"
+        android:padding="6dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="339dp">
+
+        <View
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_mail_outline_24" />
+
+        <EditText
+            android:id="@+id/edtmail"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:hint="@string/e_mail"
+            android:textColor="#BF000000"
+            android:textColorHint="#BF000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearusername01"
+        android:layout_width="345dp"
+        android:background="@drawable/selecttimebackground"
+        android:padding="6dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearusername"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lock01"
+            />
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="#BF000000"
+            android:textSize="20sp"
+            android:textColor="#BF000000"
+            android:background="@null"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/loginbtn"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearusername01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="68dp"
+        android:text="@string/log_in"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        android:background="@drawable/loginbuttonbackground"
+        />
+
+    <TextView
+        android:id="@+id/forgotPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Forgot Password?"
+        android:textColor="#A2C1FD"
+        />
+
+    <TextView
+        android:id="@+id/alreadyhaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="68dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/donthaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/alreadyhaveaccount"
+        android:layout_marginBottom="44dp"
+        android:text="@string/sign_up"
+        android:textColor="#A2C1FD"
+        android:layout_marginLeft="11dp"
+        android:textSize="14sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

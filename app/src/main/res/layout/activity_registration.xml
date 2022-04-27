@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ligthtodarkbackground"
+    tools:context=".RegistrationActivity">
+
+    <View
+        android:id="@+id/logoview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/applogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hellotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoview"
+
+        />
+
+    <TextView
+        android:id="@+id/createtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:fontFamily="@font/semibold"
+        android:text="@string/create_a_new_account"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hellotxt"
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearusermail"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/selecttimebackground"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createtxt"
+        tools:layout_editor_absoluteY="339dp">
+
+        <View
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_mail_outline_24" />
+
+        <EditText
+            android:id="@+id/emailregistration"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:backgroundTint="@color/black"
+            android:hint="@string/e_mail"
+            android:textColor="#BF000000"
+            android:textColorHint="#BF000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearusername01"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selecttimebackground"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearusermail">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lock01" />
+
+        <EditText
+            android:id="@+id/passwordregistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:textColor="#BF000000"
+            android:textColorHint="#BF000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/registrationbtn"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/loginbuttonbackground"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearusername01" />
+
+    <TextView
+        android:id="@+id/alreadyhaveaccountphraseone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/alreadyhaveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/log_in"
+        android:textColor="#A2C1FD"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/alreadyhaveaccountphraseone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

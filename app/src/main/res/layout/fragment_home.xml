@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171721"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BannerCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/headerbackground">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="36dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/member_image01"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/vectormemberlogo"
+                            android:fontFamily="@font/semibold"
+                            android:gravity="center"
+                            android:text="@string/n"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            app:layout_constraintBottom_toTopOf="@+id/dividerline"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/linear01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintLeft_toRightOf="@+id/member_image01"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nameText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/amrit_suthar"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/mobileText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/_9429346552"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintLeft_toRightOf="@+id/member_image" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="50dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/totalwokingdayshome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/_26"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/totalHaazRiText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="4dp"
+                                    android:text="@string/working_days"
+                                    android:textColor="@color/black"
+                                    android:textSize="11sp"
+                                    app:layout_constraintLeft_toRightOf="@+id/member_image" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/dividerline"
+                            android:layout_width="250dp"
+                            android:layout_height="1dp"
+                            android:background="#bababa"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/dividerline">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/fulltimelinear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toLeftOf="@+id/halftimelinear"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/fulltimehome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/_26"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:text="@string/full_time"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/halftimelinear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintLeft_toRightOf="@+id/fulltimelinear"
+                                    app:layout_constraintRight_toLeftOf="@+id/overtimelinear"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/halftimehome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/_26"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:text="@string/half_time"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/overtimelinear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintLeft_toRightOf="@+id/halftimelinear"
+                                    app:layout_constraintRight_toLeftOf="@+id/holidaylinear"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/overtimehome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/_26"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:text="@string/over_time"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/holidaylinear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintLeft_toRightOf="@+id/overtimelinear"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/holidayhome"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/_26"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="4dp"
+                                        android:text="@string/holiday"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homerecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+
+            app:layout_constraintTop_toBottomOf="@+id/BannerCardView"
+            tools:listitem="@layout/attendence_rcv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

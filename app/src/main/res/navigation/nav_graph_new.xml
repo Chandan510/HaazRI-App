@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_new"
+    app:startDestination="@id/front_Fragment">
+
+    <fragment
+        android:id="@+id/front_Fragment"
+        android:name="com.example.haazriapp.fragments.Front_Fragment"
+        android:label="Front_Fragment" >
+        <action
+            android:id="@+id/action_front_Fragment_to_fragment_create_member"
+            app:destination="@id/fragment_create_member"
+            app:popUpTo="@id/front_Fragment" />
+        <action
+            android:id="@+id/action_front_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/front_Fragment" />
+        <action
+            android:id="@+id/action_front_Fragment_self"
+            app:destination="@id/front_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.haazriapp.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_front_Fragment"
+            app:destination="@id/front_Fragment"
+            app:popUpTo="@id/front_Fragment" />
+        <argument android:name="perosn_name"
+            app:argType="string" />
+        <argument
+            android:name="mobile"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_create_member"
+        android:name="com.example.haazriapp.fragments.fragment_create_member"
+        android:label="fragment_create_member"
+        tools:layout="@layout/fragment_create_member" >
+        <action
+            android:id="@+id/action_fragment_create_member_to_front_Fragment"
+            app:destination="@id/front_Fragment"
+            app:popUpTo="@id/front_Fragment" />
+    </fragment>
+</navigation>

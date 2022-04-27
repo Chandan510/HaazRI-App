@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">हाजरी ऐप</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">स्वागत!</string>
+    <string name="sign_in_to_continue">जारी रखने के लिए साइन इन करें</string>
+    <string name="e_mail">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="log_in">लॉग इन करें</string>
+    <string name="don_t_have_an_account">अकाउन्ट नहीं है?</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="hello">नमस्ते!</string>
+    <string name="create_a_new_account">एक नया अकाउन्ट बनाएं</string>
+
+    <string name="register">रजिस्टर करे</string>
+    <string name="already_have_an_account">पहले से ही एक अकाउन्ट है?</string>
+
+    <string name="add_member">सदस्य जोड़ें</string>
+    <string name="name">नाम</string>
+    <string name="mobile">मोबाइल</string>
+    <string name="add">जोड़ें</string>
+    <string name="_0">0</string>
+    <string name="no_of_members">सदस्यों की संख्या</string>
+    <string name="_08_april_fri">08-अप्रैल | शुक्र</string>
+
+    <string name="working_days">कार्य दिवस</string>
+
+    <string name="holiday">छुट्टी</string>
+
+    <string name="setting">सेटिंग</string>
+    <string name="n">N</string>
+    <string name="chandansuthar510">चंदनसुथर510</string>
+    <string name="language">भाषा</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="log_out">लॉग आउट</string>
+    <string name="as">AS</string>
+    <string name="amrit_suthar">Amrit Suthar</string>
+    <string name="_9429346552">9429346552</string>
+    <string name="full_time">फुल टाइम</string>
+    <string name="half_time">हैफ टाइम</string>
+    <string name="over_time">ओवर टाइम</string>
+    <string name="h">H</string>
+
+</resources>
