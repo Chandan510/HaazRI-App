@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/fulltimebtn01"
-            android:layout_width="70dp"
+            android:layout_width="65dp"
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:gravity="center"
@@ -34,7 +34,7 @@
             />
         <TextView
             android:id="@+id/halftimebtn01"
-            android:layout_width="70dp"
+            android:layout_width="65dp"
             android:layout_height="36dp"
             android:gravity="center"
             android:layout_gravity="center"
@@ -45,7 +45,7 @@
             />
         <TextView
             android:id="@+id/overtimebtn01"
-            android:layout_width="70dp"
+            android:layout_width="65dp"
             android:layout_height="36dp"
             android:gravity="center"
             android:textColor="@color/black"

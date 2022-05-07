@@ -15,8 +15,7 @@
             app:popUpTo="@id/front_Fragment" />
         <action
             android:id="@+id/action_front_Fragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/front_Fragment" />
+            app:destination="@id/homeFragment" />
         <action
             android:id="@+id/action_front_Fragment_self"
             app:destination="@id/front_Fragment" />
@@ -28,7 +27,8 @@
         <action
             android:id="@+id/action_homeFragment_to_front_Fragment"
             app:destination="@id/front_Fragment"
-            app:popUpTo="@id/front_Fragment" />
+            app:popUpTo="@id/front_Fragment"
+            />
         <argument android:name="perosn_name"
             app:argType="string" />
         <argument

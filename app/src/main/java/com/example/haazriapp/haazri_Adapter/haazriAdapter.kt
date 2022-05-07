@@ -33,30 +33,49 @@ class haazriAdapter(
 
     override fun onBindViewHolder(holder: ItemviewHolder, position: Int) {
 
+
         holder.datetext.text = dt[position].date
 
         when(dt[position].time){
-//            "1" -> holder.fulltimebtn.setBackgroundResource(R.drawable.timebackground)
-//
-//            "2" -> holder.halftimebtn.setBackgroundResource(R.drawable.halftimebackground)
-//
-//            "3" -> holder.overtimebtn.setBackgroundResource(R.drawable.overtimebackground)
-//
-//            "4" -> holder.holidaybtn.setBackgroundResource(R.color.holiday)
+
             "1" -> {holder.fulltimebtn.setBackgroundResource(R.drawable.timebackground)
+                holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.halftimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.overtimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.holidaybtn.setTextColor(Color.parseColor("#FF1F1F"))
                 holder.fulltimebtn.setTextColor(Color.parseColor("#ffffff"))}
 
             "2" -> {
                 holder.halftimebtn.setBackgroundResource(R.drawable.halftimebackground)
+                holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.fulltimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.overtimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.holidaybtn.setTextColor(Color.parseColor("#FF1F1F"))
                 holder.halftimebtn.setTextColor(Color.parseColor("#ffffff"))
             }
             "3" -> {
                 holder.overtimebtn.setBackgroundResource(R.drawable.overtimebackground)
+                holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.fulltimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.halftimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.holidaybtn.setTextColor(Color.parseColor("#FF1F1F"))
                 holder.overtimebtn.setTextColor(Color.parseColor("#ffffff"))
             }
 
             "4" -> {
                 holder.holidaybtn.setBackgroundResource(R.drawable.timeholidaybackground)
+                holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.fulltimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.halftimebtn.setTextColor(Color.parseColor("#000000"))
+                holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                holder.overtimebtn.setTextColor(Color.parseColor("#000000"))
                 holder.holidaybtn.setTextColor(Color.parseColor("#ffffff"))
             }
         }

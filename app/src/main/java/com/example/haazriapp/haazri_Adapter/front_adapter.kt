@@ -34,7 +34,7 @@ class front_adapter(var userArrayList: ArrayList<Users>) :
     lateinit var database: DatabaseReference
 
     lateinit var firebaseAuth: FirebaseAuth
-    var time: String = "0"
+    private  var time: String="0"
 
     lateinit var timearraylist: ArrayList<all_data>
 
@@ -62,6 +62,8 @@ class front_adapter(var userArrayList: ArrayList<Users>) :
     }
 
     override fun onBindViewHolder(holder: front_viewHolder, position: Int) {
+
+
 
         firebaseAuth = FirebaseAuth.getInstance()
         val person = userArrayList[position].name.toString()
@@ -97,77 +99,71 @@ class front_adapter(var userArrayList: ArrayList<Users>) :
 
             builder.show()
 
-
         }
 
         holder.fulltimebtn.setOnClickListener {
             time = "1"
-            holder.fulltimebtn.setBackgroundResource(R.drawable.timebackground)
-            holder.fulltimebtn.setTextColor(Color.parseColor("#ffffff"))
-            holder.halftimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.overtimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.holidaybtn.setBackgroundResource(R.color.nullbtn)
             savedata(person)
+            userArrayList.clear()
         }
         holder.halftimebtn.setOnClickListener {
             time = "2"
-            holder.halftimebtn.setBackgroundResource(R.drawable.halftimebackground)
-            holder.halftimebtn.setTextColor(Color.parseColor("#ffffff"))
-            holder.fulltimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.overtimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.holidaybtn.setBackgroundResource(R.color.nullbtn)
             savedata(person)
-
+            userArrayList.clear()
         }
         holder.overtimebtn.setOnClickListener {
             time = "3"
-            holder.overtimebtn.setBackgroundResource(R.drawable.overtimebackground)
-            holder.overtimebtn.setTextColor(Color.parseColor("#ffffff"))
-            holder.fulltimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.halftimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.holidaybtn.setBackgroundResource(R.color.nullbtn)
             savedata(person)
-
+            userArrayList.clear()
         }
         holder.holidaybtn.setOnClickListener {
             time = "4"
-            holder.holidaybtn.setBackgroundResource(R.color.holiday)
-            holder.fulltimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.halftimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.overtimebtn.setBackgroundResource(R.color.nullbtn)
-            holder.holidaybtn.setTextColor(Color.parseColor("#ffffff"))
             savedata(person)
-
+            userArrayList.clear()
         }
+
+        val sdf = SimpleDateFormat("yyyy-MM-dd")
+        val currentDate = sdf.format(Date())
 
         val currentUser01 = firebaseAuth.currentUser
         database = FirebaseDatabase.getInstance().getReference(currentUser01!!.uid).child("Members")
             .child(person)
         database.child("data").get().addOnSuccessListener {
             if (it.exists()) {
-                tm = it.child(current_day).value.toString()
+                tm = it.child(currentDate).value.toString()
                 Log.e("tmm", it.value.toString())
                 when (tm) {
                     "1" -> {
                         holder.fulltimebtn.setBackgroundResource(R.drawable.timebackground)
+                        holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
                         holder.fulltimebtn.setTextColor(Color.parseColor("#ffffff"))
                     }
 
                     "2" -> {
                         holder.halftimebtn.setBackgroundResource(R.drawable.halftimebackground)
+                        holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
                         holder.halftimebtn.setTextColor(Color.parseColor("#ffffff"))
                     }
                     "3" -> {
                         holder.overtimebtn.setBackgroundResource(R.drawable.overtimebackground)
+                        holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.holidaybtn.setBackgroundResource(R.drawable.selecttimebackground)
                         holder.overtimebtn.setTextColor(Color.parseColor("#ffffff"))
                     }
 
                     "4" -> {
                         holder.holidaybtn.setBackgroundResource(R.drawable.timeholidaybackground)
+                        holder.fulltimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.halftimebtn.setBackgroundResource(R.drawable.selecttimebackground)
+                        holder.overtimebtn.setBackgroundResource(R.drawable.selecttimebackground)
                         holder.holidaybtn.setTextColor(Color.parseColor("#ffffff"))
                     }
                 }
-
 
             }
 
@@ -177,18 +173,24 @@ class front_adapter(var userArrayList: ArrayList<Users>) :
             val action = Front_FragmentDirections.actionFrontFragmentToHomeFragment(person, mobile)
             Navigation.findNavController(it).navigate(action)
         }
+
+
     }
 
 
-
     private fun savedata(person: String) {
-        userArrayList.clear()
+
+        val sdf = SimpleDateFormat("yyyy-MM-dd")
+        val currentDate = sdf.format(Date())
+
         firebaseAuth = FirebaseAuth.getInstance()
         val currentUser = firebaseAuth.currentUser
 
         database = FirebaseDatabase.getInstance().getReference(currentUser!!.uid).child("Members")
             .child(person).child("data")
-        database.child(current_day).setValue(time)
+
+        database.child(currentDate).setValue(time)
+
 
     }
 
@@ -207,6 +209,7 @@ class front_adapter(var userArrayList: ArrayList<Users>) :
         val deletebtn = itemView.findViewById<View>(R.id.deletebtn)
         val totalhaazritext = itemView.findViewById<TextView>(R.id.totalHaazRiText)
         val logotext = itemView.findViewById<TextView>(R.id.member_image)
+
     }
 
 }
