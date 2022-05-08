@@ -115,26 +115,32 @@
             >
             <TextView
                 android:id="@+id/fulltimebtn"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
                 android:background="@drawable/selecttimebackground"
                 android:text="@string/full_time"
                 />
             <TextView
                 android:id="@+id/halftimebtn"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/selecttimebackground"
                 android:text="@string/half_time"
                 />
             <TextView
                 android:id="@+id/overtimebtn"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
                 android:layout_height="36dp"
                 android:gravity="center"
+                android:padding="2dp"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/selecttimebackground"
                 android:text="@string/over_time"

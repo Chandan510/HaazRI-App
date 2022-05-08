@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_front_Fragment_self"
             app:destination="@id/front_Fragment" />
+        <action
+            android:id="@+id/action_front_Fragment_to_moreOptionFragment"
+            app:destination="@id/moreOptionFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -34,6 +37,9 @@
         <argument
             android:name="mobile"
             app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_moreOptionFragment"
+            app:destination="@id/moreOptionFragment" />
 
     </fragment>
     <fragment
@@ -45,5 +51,17 @@
             android:id="@+id/action_fragment_create_member_to_front_Fragment"
             app:destination="@id/front_Fragment"
             app:popUpTo="@id/front_Fragment" />
+        <action
+            android:id="@+id/action_fragment_create_member_to_moreOptionFragment"
+            app:destination="@id/moreOptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreOptionFragment"
+        android:name="com.example.haazriapp.fragments.moreOptionFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_moreOptionFragment_to_front_Fragment"
+            app:destination="@id/front_Fragment" />
     </fragment>
 </navigation>

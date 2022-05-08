@@ -30,105 +30,89 @@
         android:layout_marginTop="15dp"
         />
 
+    <LinearLayout
+        android:id="@+id/linearusername01"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedittextbackground"
+        android:padding="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmemberheading">
 
         <View
             android:id="@+id/personlogoview"
             android:layout_width="30dp"
-            android:layout_height="32dp"
+            android:layout_height="30dp"
             android:background="@drawable/ic_baseline_person_outline_24"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/addmemberheading"
-            android:layout_marginStart="46dp"
-            app:layout_constraintBottom_toTopOf="@+id/divider01"
-            android:layout_marginTop="90dp"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp"
             />
         <EditText
             android:id="@+id/edttnameText"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:hint="@string/name"
-            android:textColorHint="@color/white"
-            android:layout_marginEnd="40dp"
+            android:textColorHint="@color/black"
             android:textSize="20sp"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/divider01"
+            android:textColor="@color/black"
             android:background="@null"
-            app:layout_constraintLeft_toRightOf="@+id/personlogoview"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addmemberheading"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             />
 
-    <View
-        android:id="@+id/divider01"
-        android:layout_width="320dp"
-        android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/edttnameText"
-        android:background="@color/white"
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearusername02"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedittextbackground"
+        android:padding="3dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="3dp"
-        />
-
+        app:layout_constraintTop_toBottomOf="@+id/linearusername01">
 
 
     <View
         android:id="@+id/mobileview"
-        android:layout_width="30dp"
-        android:layout_height="32dp"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
         android:background="@drawable/ic_baseline_phone_iphone_24"
-        app:layout_constraintTop_toBottomOf="@+id/personlogoview"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider02"
-        android:layout_marginStart="46dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15dp"
         />
 
     <EditText
         android:id="@+id/mobileedttext"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:hint="@string/mobile"
-        android:textColorHint="@color/white"
-        android:layout_marginEnd="40dp"
+        android:textColorHint="@color/black"
+        android:inputType="phone"
         android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/divider02"
         android:background="@null"
-        app:layout_constraintLeft_toRightOf="@+id/mobileview"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edttnameText"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="55dp"
         />
 
-    <View
-        android:id="@+id/divider02"
-        android:layout_width="320dp"
-        android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/mobileedttext"
-        android:background="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="3dp"
-        />
+    </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
+    <TextView
         android:id="@+id/addmemberbtn"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/mobileedttext"
+        app:layout_constraintTop_toBottomOf="@+id/linearusername02"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="60dp"
-        android:backgroundTint="#84FAB0"
+        android:background="@drawable/loginbuttonbackground"
         android:text="@string/add"
         android:textColor="@color/white"
         android:fontFamily="@font/bold"
+        android:textSize="20sp"
         app:cornerRadius="8dp"
         />
 

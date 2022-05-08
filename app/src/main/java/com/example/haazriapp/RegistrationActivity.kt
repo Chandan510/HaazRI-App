@@ -45,8 +45,8 @@ class RegistrationActivity : AppCompatActivity() {
         binding.registrationbtn.setOnClickListener {
 
 
-            email = binding.emailregistration.text.toString()
-            password = binding.passwordregistration.text.toString()
+            email = binding.emailregistration.text.toString().trim()
+            password = binding.passwordregistration.text.toString().trim()
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 binding.emailregistration.error = "Invalid Email"

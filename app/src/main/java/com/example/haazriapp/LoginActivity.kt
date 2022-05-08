@@ -77,7 +77,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun validateUser() {
         email = binding.edtmail.text.toString()
-        password = binding.edtpassword.text.toString()
+        password = binding.edtpassword.text.toString().trim()
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             binding.edtmail.error = "Invalid Email"

@@ -7,6 +7,7 @@ import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.haazriapp.fragments.Front_Fragment
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val navController = findNavController(R.id.fragment_container)
+
+        bottom_navigation.setupWithNavController(navController)
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()

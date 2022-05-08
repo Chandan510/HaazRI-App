@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.haazriapp.ModelDataClass.Users
 import com.example.haazriapp.R
 import com.example.haazriapp.databinding.FragmentCreateMemberBinding
@@ -33,11 +34,7 @@ class fragment_create_member : Fragment() {
 
             val name = edttnameText.text.toString()
             val mobile = mobileedttext.text.toString()
-
-
             checkValue(name, mobile)
-
-
         }
 
 
@@ -57,6 +54,9 @@ class fragment_create_member : Fragment() {
         else if (mobile.length < 10){
             binding.mobileedttext.error = "Number must be of 10 digit"
         }
+        else if (mobile.length > 12){
+            binding.mobileedttext.error = "Number is too large"
+        }
         else{
             firebaseAuth = FirebaseAuth.getInstance()
             val currentuser = firebaseAuth.currentUser
@@ -68,10 +68,12 @@ class fragment_create_member : Fragment() {
             db.child(name).setValue(users)
 
                 .addOnSuccessListener {
-                    val fragment = Front_Fragment()
-                    val transaction = fragmentManager?.beginTransaction()
-                    transaction?.replace(R.id.fragment_container, fragment)
-                    transaction?.commit()
+//                    val fragment = Front_Fragment()
+//                    val transaction = fragmentManager?.beginTransaction()
+//                    transaction?.replace(R.id.fragment_container, fragment)
+//                    transaction?.commit()
+                    val action = fragment_create_memberDirections.actionFragmentCreateMemberToFrontFragment()
+                    findNavController().navigate(action)
 
                 }.addOnCanceledListener {
                 }

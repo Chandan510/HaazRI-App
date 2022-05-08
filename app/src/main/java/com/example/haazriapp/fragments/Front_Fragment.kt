@@ -7,9 +7,11 @@ import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.haazriapp.ModelDataClass.Users
 import com.example.haazriapp.databinding.FragmentFrontBinding
@@ -34,6 +36,8 @@ class Front_Fragment : Fragment() {
 
         lateinit var membersArrayList: ArrayList<Users>
 
+
+
         binding = FragmentFrontBinding.inflate(layoutInflater, container, false)
 
         progressBar = ProgressDialog(requireContext())
@@ -42,6 +46,8 @@ class Front_Fragment : Fragment() {
         progressBar.setCanceledOnTouchOutside(false)
 
         membersArrayList = arrayListOf<Users>()
+
+        getMembersData(membersArrayList)
 
         firebaseAuth = FirebaseAuth.getInstance()
         val currentUser = firebaseAuth.currentUser.toString()
@@ -64,41 +70,38 @@ class Front_Fragment : Fragment() {
         binding.currentdatetext.text = current_day
 
         binding.addmemberbtnfront.setOnClickListener {
-
-//            val fragment = fragment_create_member()
-//            val transaction = fragmentManager?.beginTransaction()
-//            transaction?.replace(R.id.fragment_container, fragment)?.addToBackStack("fornttohome")
-//                ?.commit()
-
             val action = Front_FragmentDirections.actionFrontFragmentToFragmentCreateMember()
-            Navigation.findNavController(it).navigate(action)
+            findNavController().navigate(action)
         }
-
-        getMembersData(membersArrayList)
         return binding.root
     }
 
-    private fun getMembersData(membersArrayList:ArrayList<Users>) {
+    private fun getMembersData(membersArrayList: ArrayList<Users>) {
+
+
         firebaseAuth = FirebaseAuth.getInstance()
         val currentUser = firebaseAuth.currentUser
         database = FirebaseDatabase.getInstance().getReference(currentUser!!.uid).child("Members")
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
-                        for (userSnapShot in snapshot.children) {
-                            val users = userSnapShot.getValue(Users::class.java)
-                            membersArrayList.add(users!!)
-                            binding.noOfMembers.text = membersArrayList.size.toString()
-                        }
-                        Log.e("cutdate", membersArrayList.toString())
-                        binding.recyclerviewfront001.adapter = front_adapter(membersArrayList)
+                if (snapshot.exists()) {
+                    for (userSnapShot in snapshot.children) {
+                        val users = userSnapShot.getValue(Users::class.java)
+                        membersArrayList.add(users!!)
+                        binding.noOfMembers.text = membersArrayList.size.toString()
                     }
-                else{
-                    Toast.makeText(requireContext(), "No Data Found or Internet Issue!", Toast.LENGTH_LONG).show()
-                    }
+                    binding.recyclerviewfront001.adapter = front_adapter(membersArrayList)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "No Data Found or Internet Issue!",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
             }
+
             override fun onCancelled(error: DatabaseError) {
-                    Toast.makeText(requireContext(), "$error", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "$error", Toast.LENGTH_SHORT).show()
             }
         })
     }

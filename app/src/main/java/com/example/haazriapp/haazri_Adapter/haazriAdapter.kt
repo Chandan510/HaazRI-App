@@ -10,9 +10,9 @@ import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.RecyclerView
 import com.example.haazriapp.*
 import com.example.haazriapp.ModelDataClass.all_data
-import com.example.haazriapp.ModelDataClass.attendence
-import com.example.haazriapp.ModelDataClass.haazRiTime
-import com.example.haazriapp.ModelDataClass.newAttendence
+
+
+
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.attendence_rcv.view.*
 import java.util.*

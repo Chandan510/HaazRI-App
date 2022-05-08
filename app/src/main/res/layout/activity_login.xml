@@ -13,7 +13,7 @@
         android:background="@drawable/applogo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="61dp"
+        android:layout_marginLeft="47dp"
         android:layout_marginTop="75dp"
         />
     <TextView
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/logoview"
-        android:layout_marginLeft="66dp"
+        android:layout_marginLeft="47dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="@string/welcome"
         android:textSize="32dp"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/hellotxt"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="66dp"
+        android:layout_marginLeft="47dp"
         android:text="@string/sign_in_to_continue"
         android:textSize="24dp"
         android:textColor="@color/white"
@@ -49,15 +49,16 @@
         app:layout_constraintTop_toBottomOf="@+id/createtxt"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:background="@drawable/selecttimebackground"
-        android:padding="6dp"
+        android:background="@drawable/roundedittextbackground"
+        android:padding="8dp"
         android:layout_marginTop="56dp"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="339dp">
 
         <View
-            android:layout_width="19dp"
-            android:layout_height="17dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
             android:layout_gravity="center"
             android:background="@drawable/ic_baseline_mail_outline_24" />
 
@@ -79,8 +80,8 @@
     <LinearLayout
         android:id="@+id/linearusername01"
         android:layout_width="345dp"
-        android:background="@drawable/selecttimebackground"
-        android:padding="6dp"
+        android:background="@drawable/roundedittextbackground"
+        android:padding="8dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/linearusername"
         android:layout_marginTop="50dp"
@@ -91,11 +92,12 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center"
+            android:layout_marginStart="15dp"
             android:background="@drawable/lock01"
             />
         <EditText
             android:id="@+id/edtpassword"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:textColorHint="#BF000000"
